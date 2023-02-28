@@ -35,6 +35,23 @@ body {
     background-color: var(--white);
     font-family: var(--primary-font);
 }
+
+button {
+    width: 100%;
+    padding: 17px;
+    font-size: 18px;
+    color: var(--pale-blue);
+    background-color: var(--light-royal-blue-background);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
 }
