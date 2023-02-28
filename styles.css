@@ -66,6 +66,8 @@ button:hover {
     width: 800px;
 }
 
+/* RESULT BLOCK */
+
 .result_block {
     background-color: var(--light-royal-blue-background);
     height: 100%;
@@ -75,10 +77,30 @@ button:hover {
     text-align: center;
 }
 
+.result_heading {
+    color: var(--light-lavender);
+    font-weight: 800;
+}
+
 .circle {
     border-radius: 50%;
     background-color:var(--violet-blue-circle);
+    width: 200px;
+    height: 200px;
+    margin: 25px 0;
 }
+
+.result_main {
+    font-weight: 700;
+    color: var(--pale-blue);
+    margin-bottom: 15px;
+}
+
+.result_article {
+    color: var(--light-lavender);
+}
+
+/* SUMMARY BLOCK */
 
 .summary_block {
     width: 50%;
