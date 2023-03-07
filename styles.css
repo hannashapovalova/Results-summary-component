@@ -212,6 +212,23 @@ button:hover {
     padding-right: 5px;
 }
 
+@media (max-width: 630px) {
+
+    .block {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .result_block {
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .summary_block {
+        width: 100%;
+    }
+
+}
 
 
 
