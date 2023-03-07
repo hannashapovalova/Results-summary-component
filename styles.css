@@ -45,11 +45,14 @@ button {
     font-family: var(--primary-font);
     font-weight: 700;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
+    margin-top: 25px;
 }
 
 button:hover {
     cursor: pointer;
+    background-color: var(--dark-gray-blue);
+
 }
 
 .container {
@@ -63,13 +66,17 @@ button:hover {
     justify-content: center;
     box-shadow: hsl(224, 30%, 27%, 0.2) 0px 15px 29px 0px;
     border-radius: 25px;
-    width: 800px;
+    width: 700px;
 }
 
 /* RESULT BLOCK */
 
 .result_block {
-    background-color: var(--light-royal-blue-background);
+    background: linear-gradient(
+        to bottom,
+        var(--light-slate-blue-background),
+        var(--light-royal-blue-background)
+    );
     height: 100%;
     width: 50%;
     border-radius: 25px;
@@ -82,12 +89,33 @@ button:hover {
     font-weight: 800;
 }
 
+.circle_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .circle {
     border-radius: 50%;
-    background-color:var(--violet-blue-circle);
-    width: 200px;
-    height: 200px;
+    background: linear-gradient(
+        to bottom,
+        var(--violet-blue-circle),
+        var(--versian-blue-circle)
+    );
+    width: 170px;
+    height: 170px;
     margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_quantity {
+    font-size: 65px;
+    font-weight: 800;
+    color: var(--pale-blue);
 }
 
 .result_main {
@@ -96,7 +124,8 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.result_article {
+.result_article,
+.result_total {
     color: var(--light-lavender);
 }
 
@@ -109,6 +138,10 @@ button:hover {
 
 .summary_block ul {
     list-style: none;
+}
+
+.summaty_heading {
+    color: var(--dark-gray-blue);
 }
 
 .reaction {
@@ -155,7 +188,7 @@ button:hover {
 .memory, 
 .verbal, 
 .visual {
-    margin: 20px 0;
+    margin: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
